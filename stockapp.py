@@ -3,7 +3,7 @@ import yfinance as yf
 import time as t
 import streamlit as st
 import plotly.express as px
-import matplotlib.pyplot as pt
+
 
 st.set_page_config(
   page_title="Stock Analysis",
