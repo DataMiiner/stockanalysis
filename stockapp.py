@@ -10,8 +10,7 @@ st.set_page_config(
   page_icon="chart_with_upwards_trend",
   layout="wide"
 )
-# Set theme to dark mode
-st.set_theme('dark')
+
 st.title("STOCKS ANALYSIS")
 #sidebar
 st.sidebar.info("stocks analysis 📈")
