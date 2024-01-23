@@ -79,7 +79,7 @@ try:
           label="Download CSV",
           data=csv_data,
           file_name=f"{st.session_state['ticker']}.csv",
-          mime="text/csv"
+          mime="application/octet-stream"
       )
     
 except:
