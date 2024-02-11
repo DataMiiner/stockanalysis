@@ -1,9 +1,12 @@
+#By dataMiiner
+#Neel Sheth
 import pandas as pd
 import yfinance as yf
 import time as t
 import streamlit as st
 import plotly.express as px
-#By DataMiiner
+
+
 #define st
 if "ticker" not in st.session_state:
   st.session_state["ticker"]=""
@@ -20,8 +23,10 @@ st.set_page_config(
 
 st.title("STOCKS ANALYSIS")
 #sidebar
+sym=pd.read_csv("sp500.csv")
 st.sidebar.info("stocks analysis 📈")
-a=st.sidebar.text_input("Ticker name(for eg: 'AAPL')")
+x=st.sidebar.selectbox("Ticker name(for eg: 'AAPL'):",sym["Symbol"] + " - " + sym["Security"])
+a = x.split(" - ")[0]
 b=st.sidebar.date_input("start Date")
 c=st.sidebar.date_input("End Date")
 st.session_state["fetch"]=st.sidebar.button("Submit")
@@ -79,7 +84,7 @@ try:
           label="Download CSV",
           data=csv_data,
           file_name=f"{st.session_state['ticker']}.csv",
-          mime="application/octet-stream"
+          mime="text/csv"
       )
     
 except:
