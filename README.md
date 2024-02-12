@@ -18,7 +18,7 @@
 <h3>2.  Max and Min Volume and Closing Price</h3>
    
 
-    ![image](https://github.com/DataMiiner/stockanalysis/assets/149947298/d2912d52-62c5-4e15-8f5f-513b10624f76)
+   ![image](https://github.com/DataMiiner/stockanalysis/assets/149947298/d2912d52-62c5-4e15-8f5f-513b10624f76)
  
    
 <h3>3.  Graphical Representation</h3>
